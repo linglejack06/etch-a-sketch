@@ -1,4 +1,4 @@
-const DEFAULTSIZE = 4;
+const DEFAULTSIZE = 16;
 const SKETCHDISPLAY = document.getElementById('sketchDisplay');
 // loops through and creates grid
 function createGrid(gridSize = DEFAULTSIZE) {
@@ -15,6 +15,7 @@ function createGrid(gridSize = DEFAULTSIZE) {
         SKETCHDISPLAY.appendChild(row);
     }
 }
+createGrid();
 function getGridSize() {
-    
+
 }
