@@ -1,5 +1,7 @@
 const DEFAULTSIZE = 16;
 const sketchDisplay = document.getElementById('sketchDisplay');
+let submit = document.getElementById('submit');
+submit.addEventListener('click', getGridSize)
 // loops through and creates grid
 function createGrid(gridSize = DEFAULTSIZE) {
     for(let i = 0; i < gridSize; i++) {
@@ -17,8 +19,8 @@ function createGrid(gridSize = DEFAULTSIZE) {
 }
 createGrid();
 function getGridSize() {
-    //get input number 
-    // when user clicks submit
-    // then re run the create grid with new sizes
-    // and reset the classList of boxes so they go uncolored
+    let gridSize = document.getElementById('numInput').value;
+    return gridSize;
 }
+ // then re run the create grid with new sizes
+    // and reset the classList of boxes so they go uncolored
