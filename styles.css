@@ -42,3 +42,6 @@ body {
     gap: 12px;
     justify-content: center;
 }
+.colored {
+    background-color: black;
+}
